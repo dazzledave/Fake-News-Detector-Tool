@@ -1,4 +1,5 @@
 <h2>An AI powered tool that skeems through a news article and detects patterns of a news being fake or real.</h2>
+<p>Used Google's Bert model to train a  real and fake news dataset I picked from kaggle</p>
 
 ## Prerequisites
 
