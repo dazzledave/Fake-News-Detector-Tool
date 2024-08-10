@@ -1,4 +1,4 @@
-An AI powered tool that skeems through a news article and detects patterns of a news being fake or real.
+<h2>An AI powered tool that skeems through a news article and detects patterns of a news being fake or real.</h2>
 <p>Used Google's Bert model to train a  real and fake news dataset I picked from kaggle. Accuracy rate is around 70%. This is the first version of this tool so please do not expect operational excellence. I'll be updating this in the future so keep an eye out.</p>
 
 ## Prerequisites
