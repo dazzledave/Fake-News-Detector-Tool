@@ -13,7 +13,7 @@ To install & run,
    Open your terminal (or Command Prompt) and run the following command:
 
    ```bash
-   git clone https://github.com/your-username/fake-news-detector-tool.git
+   git clone https://github.com/dazzledave/Fake-News-Detector-Tool.git
    ```
 
    Then navigate into the project directory:
@@ -69,8 +69,10 @@ To install & run,
 6. **Use the Fake News Detector**
 
    - Type the news text you want to check into the provided text box.
-   - Click the **Check** button.
+![FND2](https://github.com/user-attachments/assets/f5d3e44b-563a-45b7-b767-30e7ab6023f2)
+   - Click the **Check** button.![FND3](https://github.com/user-attachments/assets/9c73da51-b402-4a18-a0e0-02fc0132f03f)
    - The prediction result will display on the screen.
+
 
 ## Troubleshooting
 
