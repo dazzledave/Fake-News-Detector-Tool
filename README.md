@@ -1,6 +1,4 @@
 <h2>An AI powered tool that skeems through a news article and detects patterns of a news being fake or real.</h2>
-To install & run, 
-<h1>How to use</h1>
 
 ## Prerequisites
 
@@ -70,7 +68,7 @@ To install & run,
 
    - Type the news text you want to check into the provided text box.
 ![FND2](https://github.com/user-attachments/assets/f5d3e44b-563a-45b7-b767-30e7ab6023f2)
-   - Click the **Check** button.![FND3](https://github.com/user-attachments/assets/9c73da51-b402-4a18-a0e0-02fc0132f03f)
+   - Click the **Analyze Article** button.![FND3](https://github.com/user-attachments/assets/9c73da51-b402-4a18-a0e0-02fc0132f03f)
    - The prediction result will display on the screen.
 
 
