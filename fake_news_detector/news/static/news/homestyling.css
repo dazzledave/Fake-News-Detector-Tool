@@ -1,0 +1,36 @@
+
+body {
+  background-color: #b0b1c0;
+}
+
+header{
+  background-color: #191c20;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Arial Black', Arial, sans-serif;
+  font-size: 20px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem;
+}
+form button{
+  font-family: Arial Black;
+  color: beige;
+  background-color: blueviolet;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  width: 150px;
+  margin: 5px;
+}
+textarea{
+  border-radius: 10px;
+}
+h3{
+  font-family: monospace black;
+}

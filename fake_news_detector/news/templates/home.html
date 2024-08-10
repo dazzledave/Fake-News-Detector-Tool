@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fake News Detector</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'news/homestyling.css' %}">
+</head>
+<body>
+    <header>
+    <h1>AI Powered Fake News Detector</h1>
+    </header>
+    <h3><b>The goal of this tool is to help users quickly and reliably detect bias and misinformation in news articles.
+        I collected datasets of news articles with accurate labels from Kaggle and used them to train text classification
+        systems to distinguish between fake and real news. You can paste a piece of text and compare it to my list of true
+         vs. false news articles. Enjoy the testing!</b></h3>
+    <form id="newsForm">
+        <textarea id="newsInput" rows="10" cols="50" placeholder="Kindly paste your text here. Be sure to remove any images or ads as this will distort the results."></textarea><br>
+        <button type="submit">Analyze Article</button>
+        <button type="reset">Refresh</button>
+    </form>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('newsForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const newsText = document.getElementById('newsInput').value;
+            const response = await fetch('/news/predict/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ text: newsText })
+            });
+
+            if (response.ok) {
+                const result = await response.json();
+                document.getElementById('result').innerText = 'Prediction: ' + result.prediction;
+            } else {
+                const errorData = await response.json();
+                document.getElementById('result').innerText = 'Error: ' + errorData.error;
+            }
+        });
+    </script>
+</body>
+</html>
