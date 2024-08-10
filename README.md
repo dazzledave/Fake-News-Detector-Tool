@@ -77,6 +77,3 @@
 - If you encounter any issues, make sure that all dependencies are correctly installed.
 - Ensure your virtual environment is activated before running the project.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
